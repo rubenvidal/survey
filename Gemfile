@@ -6,6 +6,21 @@ gem 'rails', '3.0.5'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'kaminari'
+gem 'haml-rails'
+gem 'jquery-rails', '>= 0.2.6'
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'spork', '0.9.0.rc4'
+end
+
+group :development do
+  gem 'wirble'
+  gem 'hirb'
+  gem 'awesome_print'
+  gem 'nifty-generators'
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'
