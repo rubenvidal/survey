@@ -8,6 +8,8 @@
     <p>
       <%= builder.label :content, "Pregunta" %><br />
       <%= builder.text_area :content, :rows => 3 %>
+      <%= builder.check_box :_destroy %>
+      <%= builder.label :_destroy, "Elimina la pregunta" %>
     </p>
   <% end %>
   <p><%= f.submit %></p>
