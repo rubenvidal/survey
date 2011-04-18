@@ -7,6 +7,11 @@
 <ol>
   <% for pregunta in @encuesta.preguntas %>
     <li><%= pregunta.content %></li>
+    <ul>
+      <% for respuesta in pregunta.respuestas %>
+        <li><%= respuesta.contenido %></li>
+      <% end %>
+    </ul>
   <% end%>
 </ol>
 

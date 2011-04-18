@@ -5,12 +5,7 @@
     <%= f.text_field :nombre %>
   </p>
   <% f.fields_for :preguntas do |builder| %>
-    <p>
-      <%= builder.label :content, "Pregunta" %><br />
-      <%= builder.text_area :content, :rows => 3 %>
-      <%= builder.check_box :_destroy %>
-      <%= builder.label :_destroy, "Elimina la pregunta" %>
-    </p>
+    <%= render 'pregunta_fields', :f => builder %>
   <% end %>
   <p><%= f.submit %></p>
 <% end %>
