@@ -1,0 +1,17 @@
+<% title "Encuestas" %>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+  </tr>
+  <% for encuesta in @encuestas %>
+    <tr>
+      <td><%= encuesta.nombre %></td>
+      <td><%= link_to "Show", encuesta %></td>
+      <td><%= link_to "Edit", edit_encuesta_path(encuesta) %></td>
+      <td><%= link_to "Destroy", encuesta, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Encuesta", new_encuesta_path %></p>

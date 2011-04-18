@@ -1,0 +1,17 @@
+<% title "Encuesta" %>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @encuesta.nombre %>
+</p>
+<ol>
+  <% for pregunta in @encuesta.preguntas %>
+    <li><%= pregunta.content %></li>
+  <% end%>
+</ol>
+
+<p>
+  <%= link_to "Edit", edit_encuesta_path(@encuesta) %> |
+  <%= link_to "Destroy", @encuesta, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", encuestas_path %>
+</p>

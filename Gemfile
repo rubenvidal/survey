@@ -8,7 +8,7 @@ gem 'rails', '3.0.5'
 gem 'sqlite3'
 gem 'kaminari'
 gem 'haml-rails'
-gem 'jquery-rails', '>= 0.2.6'
+#gem 'jquery-rails', '>= 0.2.6'
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
@@ -44,3 +44,4 @@ end
 # group :development, :test do
 #   gem 'webrat'
 # end
+gem "mocha", :group => :test
