@@ -1,9 +1,11 @@
-<p>
-  <%= f.label :content, "Pregunta" %><br />
-  <%= f.text_area :content, :rows => 3 %>
-  <%= f.check_box :_destroy %>
-  <%= f.label :_destroy, "Elimina la pregunta" %>
-</p>
-<% f.fields_for :respuestas do |builder| %>
-  <%= render 'respuesta_fields', :f => builder %>
-<% end%>
+<div class="fields">
+  <p>
+    <%= f.label :content, "Pregunta" %><br />
+    <%= link_to_remove_fields "Elimina la pregunta", f %><br />
+    <%= f.text_area :content, :rows => 3 %>
+  </p>
+  <% f.fields_for :respuestas do |builder| %>
+    <%= render 'respuesta_fields', :f => builder %>
+  <% end%>
+  <p><%= link_to_add_fields "Nueva Respuesta", f, :respuestas %></p>
+</div>

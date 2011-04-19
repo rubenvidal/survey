@@ -6,10 +6,10 @@
 </p>
 <ol>
   <% for pregunta in @encuesta.preguntas %>
-    <li><%= pregunta.content %></li>
+    <li><%= h pregunta.content %></li>
     <ul>
       <% for respuesta in pregunta.respuestas %>
-        <li><%= respuesta.contenido %></li>
+        <li><%= h respuesta.contenido %></li>
       <% end %>
     </ul>
   <% end%>

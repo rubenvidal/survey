@@ -7,5 +7,6 @@
   <% f.fields_for :preguntas do |builder| %>
     <%= render 'pregunta_fields', :f => builder %>
   <% end %>
+  <p><%= link_to_add_fields "Nueva Pregunta", f, :preguntas %></p>
   <p><%= f.submit %></p>
 <% end %>
