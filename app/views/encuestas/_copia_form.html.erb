@@ -1,4 +1,4 @@
-<%= nested_form_for @encuesta do |f| %>
+<%= form_for @encuesta do |f| %>
   <%= f.error_messages %>
   <p>
     <%= f.label :nombre %><br />
@@ -7,6 +7,5 @@
   <% f.fields_for :preguntas do |builder| %>
     <%= render 'pregunta_fields', :f => builder %>
   <% end %>
-  <%= f.link_to_add "Añade una Pregunta", :preguntas %>
   <p><%= f.submit %></p>
 <% end %>

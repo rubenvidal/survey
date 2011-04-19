@@ -9,10 +9,10 @@ class EncuestasController < ApplicationController
 
   def new
     @encuesta = Encuesta.new
-    3.times do
-      pregunta = @encuesta.preguntas.build
-      4.times { pregunta.respuestas.build }
-    end
+#    3.times do
+      #pregunta = @encuesta.preguntas.build
+      #4.times { pregunta.respuestas.build }
+    #end
   end
   def create
     @encuesta = Encuesta.new(params[:encuesta])

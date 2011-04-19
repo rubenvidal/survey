@@ -57,6 +57,9 @@ GEM
       railties (~> 3.0)
     hirb (0.4.3)
     i18n (0.5.0)
+    jquery-rails (0.2.7)
+      rails (~> 3.0)
+      thor (~> 0.14.4)
     json_pure (1.5.1)
     kaminari (0.10.4)
       rails (>= 3.0.0)
@@ -67,6 +70,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.16)
     mocha (0.9.12)
+    nested_form (0.1.0)
     nifty-generators (0.4.6)
     nokogiri (1.4.4)
     polyglot (0.3.1)
@@ -126,8 +130,10 @@ DEPENDENCIES
   capybara
   haml-rails
   hirb
+  jquery-rails (>= 0.2.6)
   kaminari
   mocha
+  nested_form
   nifty-generators
   rails (= 3.0.5)
   rspec-rails
